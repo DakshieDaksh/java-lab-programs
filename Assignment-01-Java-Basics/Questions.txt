@@ -1,0 +1,29 @@
+1. Explain the main concept used in Java environment setup, variables, and methods.
+
+This program demonstrates the basic concepts of Java programming. It runs in the Java environment using the Java Development Kit (JDK) and the Java Virtual Machine (JVM). The program uses variables (studentName, age, and cgpa) to store student information. It also uses a method (greet()) to display a welcome message, showing how code can be reused. A constructor is used to create a Student object and initialize its data, while the displayDetails() method prints the student's information.
+
+2. What are the advantages of using Java variables and methods?
+Variables store different types of data, such as names, ages, and CGPA.
+Methods make the code reusable, reducing repetition.
+The program becomes easier to read and organize.
+Methods allow tasks, such as greeting the user or displaying details, to be separated into logical sections.
+Variables and methods make the program easier to update and maintain.
+3. How can this implementation be improved?
+
+The program can be improved by:
+
+Taking user input using the Scanner class instead of using fixed values.
+Making the Student fields private and using getters and setters to follow encapsulation.
+Adding input validation to ensure valid age and CGPA values.
+Allowing multiple student objects to be created.
+Formatting the CGPA to two decimal places for better output.
+Adding comments and better exception handling where necessary.
+4. What are the real-world applications?
+
+This program demonstrates concepts used in many real-world applications, including:
+
+Student Management Systems.
+School and university databases.
+Employee Management Systems.
+Banking and customer information systems.
+Hospital patient record systems.
