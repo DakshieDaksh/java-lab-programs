@@ -26,7 +26,7 @@ class ProductDetails {
   // Display common information
   void displayProduct() {
     System.out.println("\nProduct Name : " + productName);
-    System.out.println("Price        : ₹" + price);
+    System.out.println("Price        : $" + price);
   }
 }
 

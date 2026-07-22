@@ -26,9 +26,8 @@ class Student {
   }
 
   // Method to display student details
-  void display() {
-    System.out.println("Student Name : " + name);
-    System.out.println("Roll Number  : " + rollNo);
+  public String toString() {
+    return "Student Name : " + name + "\nRoll Number  : " + rollNo;
   }
 }
 
@@ -43,7 +42,7 @@ public class StudentDemo {
     Student s1 = new Student();
 
     System.out.println("Student Details using Default Constructor");
-    s1.display();
+    System.out.println(s1.toString());
 
     System.out.println();
 
@@ -62,7 +61,7 @@ public class StudentDemo {
     Student s2 = new Student(name, roll);
 
     System.out.println("\nStudent Details using Parameterized Constructor");
-    s2.display();
+    System.out.println(s2.toString());
 
     sc.close();
   }

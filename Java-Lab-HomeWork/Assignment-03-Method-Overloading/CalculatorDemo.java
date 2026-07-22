@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner; // Imports Scanner class for taking user input
 
 // Calculator class
@@ -46,7 +47,7 @@ public class CalculatorDemo {
 
   public static void main(String[] args) {
     // Scanner object to read keyboard input
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
     // Create Calculator object
     Calculator calc = new Calculator();

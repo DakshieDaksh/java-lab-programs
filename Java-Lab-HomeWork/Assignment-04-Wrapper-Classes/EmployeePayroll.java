@@ -47,9 +47,9 @@ public class EmployeePayroll {
       // Display Employee Details
       System.out.println("\n------ Employee Payroll ------");
       System.out.println("Employee ID : " + empId);
-      System.out.println("Basic Salary : ₹" + basicSalary);
-      System.out.println("Bonus : ₹" + bonus);
-      System.out.println("Net Salary : ₹" + netSalary);
+      System.out.println("Basic Salary : $" + basicSalary);
+      System.out.println("Bonus : $" + bonus);
+      System.out.println("Net Salary : $" + netSalary);
     }
 
     sc.close();

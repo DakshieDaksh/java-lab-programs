@@ -40,10 +40,8 @@ class Mobile {
   }
 
   // Method to display mobile details
-  void display() {
-    System.out.println("Brand : " + brand);
-    System.out.println("Model : " + model);
-    System.out.println("Price : ₹" + price);
+  public String toString() {
+    return "Brand : " + brand + "\nModel : " + model + "\nPrice : ₹" + price;
   }
 }
 
@@ -58,9 +56,9 @@ public class MobileInventory {
     Mobile m1 = new Mobile();
 
     System.out.println("Default Mobile Details");
-    m1.display();
+    
 
-    System.out.println();
+    System.out.println(m1.toString());
 
     // ==================================
     // Taking input from user
@@ -80,7 +78,7 @@ public class MobileInventory {
     Mobile m2 = new Mobile(brand, model, price);
 
     System.out.println("\nOriginal Mobile Details");
-    m2.display();
+    System.out.println(m2.toString());
 
     // ==================================
     // Object using Copy Constructor
@@ -89,7 +87,7 @@ public class MobileInventory {
     Mobile m3 = new Mobile(m2);
 
     System.out.println("\nDuplicate Mobile Details");
-    m3.display();
+    System.out.println(m3.toString());
 
     sc.close();
   }

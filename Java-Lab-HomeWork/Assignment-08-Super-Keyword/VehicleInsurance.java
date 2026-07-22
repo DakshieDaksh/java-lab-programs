@@ -42,7 +42,7 @@ class Insurance extends Vehicle {
     // Calls parent method using super
     super.displayVehicle();
 
-    System.out.println("Insurance Amount : ₹" + insuranceAmount);
+    System.out.println("Insurance Amount : $" + insuranceAmount);
   }
 }
 
