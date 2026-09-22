@@ -1,42 +1,44 @@
-package JAVA.Lab.java-lab-programs.Java-Lab-HomeWork.Assignment-13-File-Handling;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
+public class EmployeeFile {
 
+  public static void main(String[] args) {
+    String fileName = "employee.txt";
 
-import java.io.*;
+    try {
+      FileWriter fw = new FileWriter(fileName);
+      BufferedWriter bw = new BufferedWriter(fw);
 
-public class Exp13 {
-    public static void main(String[] args) {
+      bw.write("Employee ID: 101");
+      bw.newLine();
 
-        String fileName = "employee.txt";
+      bw.write("Name: Daksh");
+      bw.newLine();
 
-        try {
-            FileWriter fw = new FileWriter(fileName);
-            BufferedWriter bw = new BufferedWriter(fw);
+      bw.write("Department: CSE");
+      bw.newLine();
 
-            bw.write("Employee ID: 101");
-            bw.newLine();
-            bw.write("Name: Daksh");
-            bw.newLine();
-            bw.write("Department: CSE");
-            bw.newLine();
-            bw.write("Salary: 50000");
-            bw.newLine();
+      bw.write("Salary: 50000");
+      bw.newLine();
 
-            bw.close();
+      bw.close();
 
-            FileReader fr = new FileReader(fileName);
-            BufferedReader br = new BufferedReader(fr);
+      FileReader fr = new FileReader(fileName);
+      BufferedReader br = new BufferedReader(fr);
 
-            String line;
+      String line;
 
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
+      while ((line = br.readLine()) != null) {
+        System.out.println(line);
+      }
 
-            br.close();
-
-        } catch (IOException e) {
-            System.out.println("File error: " + e.getMessage());
-        }
+      br.close();
+    } catch (IOException e) {
+      System.out.println("File error: " + e.getMessage());
     }
+  }
 }

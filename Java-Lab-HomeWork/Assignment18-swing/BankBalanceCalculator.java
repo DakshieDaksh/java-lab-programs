@@ -2,22 +2,24 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Exp18 extends JFrame implements ActionListener {
+public class BankBalanceCalculator extends JFrame implements ActionListener {
 
   JTextField balanceField, amountField;
   JButton depositButton, withdrawButton;
   JLabel resultLabel;
 
-  Exp18() {
+  BankBalanceCalculator() {
     setTitle("Bank Balance Calculator");
     setSize(400, 300);
     setLayout(new FlowLayout());
 
     add(new JLabel("Initial Balance:"));
+
     balanceField = new JTextField(15);
     add(balanceField);
 
     add(new JLabel("Transaction Amount:"));
+
     amountField = new JTextField(15);
     add(amountField);
 
@@ -43,9 +45,7 @@ public class Exp18 extends JFrame implements ActionListener {
 
     if (e.getSource() == depositButton) {
       balance = balance + amount;
-    }
-
-    if (e.getSource() == withdrawButton) {
+    } else if (e.getSource() == withdrawButton) {
       balance = balance - amount;
     }
 
@@ -53,6 +53,6 @@ public class Exp18 extends JFrame implements ActionListener {
   }
 
   public static void main(String[] args) {
-    new Exp18();
+    new BankBalanceCalculator();
   }
 }

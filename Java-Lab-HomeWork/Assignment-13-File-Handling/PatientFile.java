@@ -1,35 +1,34 @@
-package JAVA.Lab.java-lab-programs.Java-Lab-HomeWork.Assignment-13-File-Handling;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class PatientFile {
-    public static void main(String[] args) {
 
-        try {
-            FileWriter writer = new FileWriter("patient.txt");
+  public static void main(String[] args) {
+    try {
+      FileWriter writer = new FileWriter("patient.txt");
 
-            writer.write("Patient ID: 101\n");
-            writer.write("Name: Rahul\n");
-            writer.write("Age: 25\n");
-            writer.write("Diagnosis: Fever\n");
+      writer.write("Patient ID: 101\n");
+      writer.write("Name: Rahul\n");
+      writer.write("Age: 25\n");
+      writer.write("Diagnosis: Fever\n");
 
-            writer.close();
+      writer.close();
 
-            BufferedReader reader =
-                    new BufferedReader(new FileReader("patient.txt"));
+      BufferedReader reader = new BufferedReader(new FileReader("patient.txt"));
 
-            String line;
+      String line;
 
-            System.out.println("Patient Details:");
+      System.out.println("Patient Details:");
 
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
+      while ((line = reader.readLine()) != null) {
+        System.out.println(line);
+      }
 
-            reader.close();
-
-        } catch (IOException e) {
-            System.out.println("An error occurred: " + e.getMessage());
-        }
+      reader.close();
+    } catch (IOException e) {
+      System.out.println("An error occurred: " + e.getMessage());
     }
+  }
 }
