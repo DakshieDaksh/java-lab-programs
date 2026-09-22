@@ -1,3 +1,5 @@
+package Part1;
+
 import faculty.Faculty;
 import student.Student;
 
