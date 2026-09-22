@@ -65,7 +65,7 @@ public class RestaurantBilling {
     double dineIn = sc.nextDouble();
 
     // Calls calculateBill(double)
-    System.out.println("Dine-In Bill = ₹" + bill.calculateBill(dineIn));
+    System.out.println("Dine-In Bill = " + bill.calculateBill(dineIn));
 
     // -----------------------------
     // TAKEAWAY
@@ -78,7 +78,7 @@ public class RestaurantBilling {
 
     // Calls calculateBill(double,double)
     System.out.println(
-      "Takeaway Bill = ₹" + bill.calculateBill(takeaway, packing)
+      "Takeaway Bill = " + bill.calculateBill(takeaway, packing)
     );
 
     // -----------------------------
@@ -95,7 +95,7 @@ public class RestaurantBilling {
 
     // Calls calculateBill(double,double,double)
     System.out.println(
-      "Delivery Bill = ₹" +
+      "Delivery Bill = " +
         bill.calculateBill(delivery, packing2, deliveryCharge)
     );
 

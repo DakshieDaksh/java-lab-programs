@@ -41,7 +41,7 @@ class Mobile {
 
   // Method to display mobile details
   public String toString() {
-    return "Brand : " + brand + "\nModel : " + model + "\nPrice : ₹" + price;
+    return "Brand : " + brand + "\nModel : " + model + "\nPrice : " + price;
   }
 }
 
@@ -56,7 +56,6 @@ public class MobileInventory {
     Mobile m1 = new Mobile();
 
     System.out.println("Default Mobile Details");
-    
 
     System.out.println(m1.toString());
 
